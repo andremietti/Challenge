@@ -12,6 +12,11 @@
 		0E1BFEBB20379B0600B4D842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BFEB920379B0600B4D842 /* Main.storyboard */; };
 		0E1BFEBD20379B0600B4D842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BFEBC20379B0600B4D842 /* Assets.xcassets */; };
 		0E1BFEC020379B0600B4D842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BFEBE20379B0600B4D842 /* LaunchScreen.storyboard */; };
+		0E1BFEC820379B4200B4D842 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E1BFEC720379B4200B4D842 /* GoogleService-Info.plist */; };
+		0E827AB820379FE100BC08C7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E827AB520379FE000BC08C7 /* Bolts.framework */; };
+		0E827AB920379FE100BC08C7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E827AB620379FE000BC08C7 /* FBSDKCoreKit.framework */; };
+		0E827ABA20379FE100BC08C7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E827AB720379FE100BC08C7 /* FBSDKLoginKit.framework */; };
+		E4D6122049336C9199B62F07 /* Pods_ChallengeProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B33041112BB4EF95DBED24 /* Pods_ChallengeProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		0E1BFEBC20379B0600B4D842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E1BFEBF20379B0600B4D842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E1BFEC120379B0600B4D842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E1BFEC720379B4200B4D842 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0E827AB520379FE000BC08C7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		0E827AB620379FE000BC08C7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0E827AB720379FE100BC08C7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		BA43DC01052B2252087A21DF /* Pods-ChallengeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChallengeProject/Pods-ChallengeProject.debug.xcconfig"; sourceTree = "<group>"; };
+		D87E5699EB3A84A279913CFB /* Pods-ChallengeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChallengeProject/Pods-ChallengeProject.release.xcconfig"; sourceTree = "<group>"; };
+		E4B33041112BB4EF95DBED24 /* Pods_ChallengeProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4D6122049336C9199B62F07 /* Pods_ChallengeProject.framework in Frameworks */,
+				0E827AB920379FE100BC08C7 /* FBSDKCoreKit.framework in Frameworks */,
+				0E827ABA20379FE100BC08C7 /* FBSDKLoginKit.framework in Frameworks */,
+				0E827AB820379FE100BC08C7 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,8 @@
 			children = (
 				0E1BFEB420379B0600B4D842 /* ChallengeProject */,
 				0E1BFEB320379B0600B4D842 /* Products */,
+				DAA1A72F25EAA096F504E253 /* Pods */,
+				CC509EB4D53D68326EC130F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,37 @@
 				0E1BFEBC20379B0600B4D842 /* Assets.xcassets */,
 				0E1BFEBE20379B0600B4D842 /* LaunchScreen.storyboard */,
 				0E1BFEC120379B0600B4D842 /* Info.plist */,
+				0E1BFEC720379B4200B4D842 /* GoogleService-Info.plist */,
+				0E827AB420379FD100BC08C7 /* Frameworks */,
 			);
 			path = ChallengeProject;
+			sourceTree = "<group>";
+		};
+		0E827AB420379FD100BC08C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E827AB520379FE000BC08C7 /* Bolts.framework */,
+				0E827AB620379FE000BC08C7 /* FBSDKCoreKit.framework */,
+				0E827AB720379FE100BC08C7 /* FBSDKLoginKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC509EB4D53D68326EC130F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4B33041112BB4EF95DBED24 /* Pods_ChallengeProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAA1A72F25EAA096F504E253 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA43DC01052B2252087A21DF /* Pods-ChallengeProject.debug.xcconfig */,
+				D87E5699EB3A84A279913CFB /* Pods-ChallengeProject.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E1BFEC420379B0600B4D842 /* Build configuration list for PBXNativeTarget "ChallengeProject" */;
 			buildPhases = (
+				807B453E6E2257F21A2B3926 /* [CP] Check Pods Manifest.lock */,
 				0E1BFEAE20379B0500B4D842 /* Sources */,
 				0E1BFEAF20379B0500B4D842 /* Frameworks */,
 				0E1BFEB020379B0500B4D842 /* Resources */,
+				BA486FE87D8194A7FF0824E8 /* [CP] Embed Pods Frameworks */,
+				324608D3F60B0043B497307A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +174,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E1BFEC020379B0600B4D842 /* LaunchScreen.storyboard in Resources */,
+				0E1BFEC820379B4200B4D842 /* GoogleService-Info.plist in Resources */,
 				0E1BFEBD20379B0600B4D842 /* Assets.xcassets in Resources */,
 				0E1BFEBB20379B0600B4D842 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		324608D3F60B0043B497307A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChallengeProject/Pods-ChallengeProject-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChallengeProject/Pods-ChallengeProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		807B453E6E2257F21A2B3926 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA486FE87D8194A7FF0824E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChallengeProject/Pods-ChallengeProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChallengeProject/Pods-ChallengeProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E1BFEAE20379B0500B4D842 /* Sources */ = {
@@ -272,13 +386,18 @@
 		};
 		0E1BFEC520379B0600B4D842 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA43DC01052B2252087A21DF /* Pods-ChallengeProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4MES244JS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChallengeProject/Frameworks",
+				);
 				INFOPLIST_FILE = ChallengeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Mietti.ChallengeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mietti.ChallengeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,13 +406,18 @@
 		};
 		0E1BFEC620379B0600B4D842 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D87E5699EB3A84A279913CFB /* Pods-ChallengeProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A4MES244JS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ChallengeProject/Frameworks",
+				);
 				INFOPLIST_FILE = ChallengeProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Mietti.ChallengeProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mietti.ChallengeProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

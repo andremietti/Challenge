@@ -7,19 +7,45 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
+import Firebase
+import  GoogleSignIn
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, GIDSignInUIDelegate {
+
+    let fbLoginButton = FBSDKLoginButton()
+    let googleLoginButton = GIDSignInButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if FBSDKAccessToken.current() != nil  {
+            //do something
+        }
+        else {
+            setupFacebookButton()
+        }
+        setupGoogleLoginButton()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
     }
+    func setupFacebookButton() {
+        fbLoginButton.readPermissions = ["public_profile", "email"]
+        fbLoginButton.center.y = 70
+        fbLoginButton.center.x = view.center.x
+        view.addSubview(fbLoginButton)
+    }
+    
+    func setupGoogleLoginButton() {
+        GIDSignIn.sharedInstance().uiDelegate = self
+        //GIDSignIn.sharedInstance().signInSilently()
 
+        googleLoginButton.center.y = 120
+        googleLoginButton.center.x = view.center.x
+        view.addSubview(googleLoginButton)
+    }
 
 }
-
